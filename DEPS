@@ -8,7 +8,7 @@
 # where <gcliendir> is the absolute path to the directory containing the
 # .gclient file (the parent of 'src').
 #
-# Then commit .DEPS.git locally (gclient doesn't like dirty trees) and run
+# Then commit .DEPS.git locally (gclient doesn't like dirty trees) and ru
 #   gclient sync..
 # Verify the thing happened you wanted. Then revert your .DEPS.git change
 # DO NOT CHECK IN CHANGES TO .DEPS.git upstream. It will be automatically
@@ -47,7 +47,7 @@ vars = {
   'dart_boringssl_rev': '1607f54fed72c6589d560254626909a64124f091',
   'dart_clock_rev': 'a494269254ba978e7ef8f192c5f7fec3fc05b9d3',
   'dart_collection_rev': '75a7a5510979a3cd70143af85bcc1667ee233674',
-  'dart_devtools_rev': '64cffbed6366329ad05e44d48fa2298367643bb6',
+  'dart_devtools_rev': '2b47d9ed486479153ca2fd038000950674ed1beb',
   'dart_http_throttle_tag': '1.0.2',
   'dart_intl_tag': '0.17.0-nullsafety',
   'dart_linter_tag': '1.9.0',
@@ -172,7 +172,7 @@ deps = {
   # WARNING: Unused Dart dependencies in the list below till "WARNING:" marker are removed automatically - see create_updated_flutter_deps.py.
 
   'src/third_party/dart/third_party/devtools':
-   {'packages': [{'version': 'git_revision:64cffbed6366329ad05e44d48fa2298367643bb6', 'package': 'dart/third_party/flutter/devtools'}], 'dep_type': 'cipd'},
+   {'packages': [{'version': 'git_revision:2b47d9ed486479153ca2fd038000950674ed1beb', 'package': 'dart/third_party/flutter/devtools'}], 'dep_type': 'cipd'},
 
   'src/third_party/dart/third_party/pkg/args':
    Var('dart_git') + '/args.git@bf4c8796881b62fd5d3f6d86ab43014f9651eb20',
